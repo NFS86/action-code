@@ -72,10 +72,9 @@ class TelegraphHelper:
                     nxt_page += 1
             self.edit_page(
                 path = path[prev_page],
-                title = 'Kang [M•R•T] Torrent Search',
+                title = 'Google Drive Search',
                 content=content
             )
         return
 
-
-telegraph=TelegraphHelper('Kang [M•R•T]', 'https://github.com/NFS86/nfsmirrorbot')
+telegraph=TelegraphHelper('Telegraph', 'https://telegra.ph')
