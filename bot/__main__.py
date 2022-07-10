@@ -75,7 +75,7 @@ Type /{BotCommands.HelpCommand} To View Available Commands
 '''
         update.effective_message.reply_photo(IMAGE_URL, start_string, parse_mode = 'Markdown', reply_markup=reply_markup)
     else:
-        sendMarkup('<b>🔴 Hey, what are you doing.? 🔴</b>\n\n\n\n▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬\nPlease contact my master to get permission for access use this bot.\n▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬', context.bot, update.message, reply_markup)
+        sendMarkup('<b>🔴 Hey, what are you doing.? 🔴</b>\n\n\n\n▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬\n\nPlease contact my master to get permission to use this bot..\n\n▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬', context.bot, update.message, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("<b>🔄 Restarting, Please Wait! 🔄</b>", context.bot, update.message)
