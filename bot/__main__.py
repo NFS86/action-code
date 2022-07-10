@@ -65,7 +65,7 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("😎 My Master 😎", "https://t.me/KurangKopiGes")
+    buttons.buildbutton("👉 My Master 👈", "https://t.me/KurangKopiGes")
 
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
@@ -75,7 +75,7 @@ Type /{BotCommands.HelpCommand} To View Available Commands
 '''
         update.effective_message.reply_photo(IMAGE_URL, start_string, parse_mode = 'Markdown', reply_markup=reply_markup)
     else:
-        sendMarkup('<b>😅 Jancuk i koe arep nyapo to 😅️</b>', context.bot, update.message, reply_markup)
+        sendMarkup('<b>🔴 Hey, what are you doing.? 🔴</b>\n\n▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬\nPlease contact my master to get permission for access the use this bot.\n▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬', context.bot, update.message, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("<b>🔄 Restarting, Please Wait! 🔄</b>", context.bot, update.message)
